@@ -1,0 +1,312 @@
+
+* {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(14, 94, 111);
+    color: white;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(255, 239, 214);
+}
+
+header ul {
+    text-align: center;
+    padding-top: 63px;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+.button{
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(58, 136, 145);
+    margin-right: 10px;
+    text-align: center;
+}
+
+.clickable-link {
+    text-decoration: none;
+    color: white;
+}
+
+.clickable-link:hover {
+    transition-delay: 50ms;
+    color: rgb(14, 94, 111);
+}
+
+.nav-pane {
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0px;
+}
+
+.header-title { 
+    flex-flow: 1;
+    text-align: center;
+}
+
+.header-title h1 {
+    margin-bottom: 3px;
+}
+
+.header-title h3 {
+    font-style: italic;
+}
+
+body {
+    background-color: rgb(255, 239, 214);
+    background-attachment: fixed;
+    margin-bottom: 80px;
+}
+
+.welcome-message {
+    text-shadow: 0 0 10px black;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(58, 136, 145, 0.7);
+    border-radius: 20px;
+}
+
+.welcome-message ul li {
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: rgb(14, 94, 111);
+    color: rgb(239, 239, 239);
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.profile-header {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* REMOVE LATER */  
+    border: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.profile-picture {
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.meetings-tab {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* REMOVE LATER */  
+    border: 1px solid black;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+
+.bio-pane { 
+    resize: none; 
+    margin-right: 1%; 
+    margin-left: 10px;
+    width: 80%; 
+    background-color: rgb(255, 247, 236);
+    pointer-events: none;
+}
+
+.time-slots-list {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.time-slot {
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.time-slot input::-webkit-calendar-picker-indicator {
+    background: none;
+    display: none;
+}
+
+label{
+    display: inline-block;
+    width: 150px;
+}
+.signupbuttons{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.formbutton{
+   background-color: white;
+   padding: 10px;
+   font-size: 15px;
+}
+
+.title{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.formbutton:hover{
+    color: rgb(14, 94, 111);
+}
+
+.signinform{
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.title1{
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: center;
+} 
+
+.signinbutton{
+   background-color: white;
+   padding: 10px;
+   font-size: 15px;
+   margin-top: 20px;
+}
+
+.signinbutton:hover{
+    color: rgb(14, 94, 111);
+}
+
+.signinbuttons{
+    display: flex;
+    text-align: center;
+    column-gap: 50px;
+}
+
+
+
+.mentorbutton{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mentorbutton:hover{
+    color: rgb(14, 94, 111);
+}
+
+
+.mentor{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 2px solid rgb(14, 94, 111);
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-around;
+}
+
+.bio{
+    font-size: 12px;
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.twobuttons{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.profileinfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10px ;
+}
+
+.onegroup{
+    display: flex;
+    flex-direction: column;
+    gap: 50px ;
+}
+
+.secondgroup{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.skills{
+    margin-left: 100px;
+}
+
+.signupform{
+    line-height: 2;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 50px;
+    align-items: center;
+    
+}
+
+.formfields{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.signupbuttons2{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 75px;
+    align-self:center; 
+}
