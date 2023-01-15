@@ -111,7 +111,7 @@ footer {
 }
 
 .profile-picture {
-    border: 2px solid black;
+    border: 0.3em solid black;
     background-color: black;
     border-radius: 5px;
 }
